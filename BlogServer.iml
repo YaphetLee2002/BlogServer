@@ -87,5 +87,8 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.3.23" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:5.3.23" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.9.0" level="project" />
+    <orderEntry type="library" name="font-awesome" level="application" />
+    <orderEntry type="library" name="element-ui" level="application" />
+    <orderEntry type="library" name="index" level="application" />
   </component>
 </module>
