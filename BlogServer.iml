@@ -25,6 +25,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="font-awesome" level="application" />
+    <orderEntry type="library" name="element-ui" level="application" />
+    <orderEntry type="library" name="index" level="application" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.7.4" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.7.4" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.7.4" level="project" />
@@ -87,8 +90,14 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.3.23" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:5.3.23" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.9.0" level="project" />
-    <orderEntry type="library" name="font-awesome" level="application" />
-    <orderEntry type="library" name="element-ui" level="application" />
-    <orderEntry type="library" name="index" level="application" />
+    <orderEntry type="library" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.7.4" level="project" />
+    <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:4.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:5.3.23" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.3.23" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:2.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.5.9" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis:mybatis-spring:2.0.7" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:druid:1.2.11" level="project" />
   </component>
 </module>
