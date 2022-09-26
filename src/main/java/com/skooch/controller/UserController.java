@@ -29,10 +29,10 @@ public class UserController {
 
     @GetMapping("/{username}")
     public Result getUserByName(@PathVariable String username) {
-        User user = userService.getUserByName(username);
-        Integer code = (user != null) ? Code.GET_OK : Code.GET_ERR;
-        String msg = (user != null) ? "查询成功" : "查询失败";
-        return new Result(code, user, msg);
+        List<User> userList = userService.getUserByName(username);
+        Integer code = (userList != null) ? Code.GET_OK : Code.GET_ERR;
+        String msg = (userList != null) ? "查询成功" : "查询失败";
+        return new Result(code, userList, msg);
     }
 
     @GetMapping

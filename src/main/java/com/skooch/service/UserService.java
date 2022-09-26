@@ -12,7 +12,7 @@ public interface UserService {
 
     public boolean deleteUser(Integer id);
 
-    public User getUserByName(String username);
+    public List<User> getUserByName(String username);
 
     public List<User> getAllUser();
 }

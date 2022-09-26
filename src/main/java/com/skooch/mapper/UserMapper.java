@@ -18,8 +18,8 @@ public interface UserMapper {
     @Delete("delete from user where id = #{id};")
     public int deleteUser(Integer id);
 
-    @Select("select * from user where username = #{username};")
-    public User getUserByName(String username);
+    @Select("select * from user where username like concat('%', #{username}, '%');")
+    public List<User> getUserByName(String username);
 
     @Select("select * from user;")
     public List<User> getAllUser();
