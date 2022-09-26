@@ -2,7 +2,6 @@ package com.skooch.controller;
 
 import com.skooch.pojo.User;
 import com.skooch.service.UserService;
-import org.apache.ibatis.annotations.Delete;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
