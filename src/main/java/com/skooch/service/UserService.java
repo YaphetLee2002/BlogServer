@@ -10,9 +10,9 @@ public interface UserService {
 
     public boolean createUser(User user);
 
-    public boolean deleteUser(Long id);
+    public boolean deleteUser(String id);
 
-    public User getUserById(Long id);
+    public User getUserById(String id);
 
     public List<User> getUserByName(String username);
 

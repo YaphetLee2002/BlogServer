@@ -21,13 +21,13 @@ public class UserController {
     }
 
     @DeleteMapping("/{id}")
-    public Result deleteUser(@PathVariable Long id) {
+    public Result deleteUser(@PathVariable String id) {
         boolean flag = userService.deleteUser(id);
         return new Result(flag ? Code.DELETE_OK : Code.DELETE_ERR, flag);
     }
 
     @GetMapping("/id/{id}")
-    public Result getUserById(@PathVariable Long id) {
+    public Result getUserById(@PathVariable String id) {
         User user = userService.getUserById(id);
         Integer code = (user != null) ? Code.GET_OK : Code.GET_ERR;
         String msg = (user != null) ? "查询成功" : "查询失败";

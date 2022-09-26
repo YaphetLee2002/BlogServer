@@ -16,17 +16,17 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean createUser(User user) {
-        return userMapper.createUser(user) > 0;
+        return userMapper.insert(user) > 0;
     }
 
     @Override
-    public boolean deleteUser(Long id) {
-        return userMapper.deleteUser(id) > 0;
+    public boolean deleteUser(String id) {
+        return userMapper.deleteById(id) > 0;
     }
 
     @Override
-    public User getUserById(Long id) {
-        return userMapper.getUserById(id);
+    public User getUserById(String id) {
+        return userMapper.selectById(id);
     }
 
     @Override
