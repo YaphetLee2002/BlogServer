@@ -27,6 +27,12 @@ class BlogServerApplicationTests {
     public void deleteUser(){
         System.out.println(userService.deleteUser(4L));
     }
+
+    @Test
+    public void getUserById() {
+        System.out.println(userService.getUserById(2L));
+    }
+
     @Test
     public void getUserByName(){
         System.out.println(userService.getUserByName("skooch04"));

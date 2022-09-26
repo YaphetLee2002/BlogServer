@@ -15,6 +15,9 @@ public interface UserMapper {
     @Delete("delete from user where id = #{id};")
     public int deleteUser(Long id);
 
+    @Select("select * from user where id = #{id};")
+    public User getUserById(Long id);
+
     @Select("select * from user where username like concat('%', #{username}, '%');")
     public List<User> getUserByName(String username);
 
@@ -23,4 +26,6 @@ public interface UserMapper {
 
     @Update("update user set username = #{username}, password = #{password}, description = #{description} where id = #{id};")
     public int updateUser(User user);
+
+
 }
