@@ -25,7 +25,7 @@ class BlogServerApplicationTests {
     }
     @Test
     public void deleteUser(){
-        System.out.println(userService.deleteUser(4));
+        System.out.println(userService.deleteUser(4L));
     }
     @Test
     public void getUserByName(){
@@ -36,4 +36,13 @@ class BlogServerApplicationTests {
         System.out.println(userService.getAllUser());
     }
 
+    @Test
+    public void updateUser() {
+        User user = new User();
+        user.setId(9L);
+        user.setUsername("Changed");
+        user.setPassword("12345");
+        user.setDescription("Changed Description");
+        System.out.println(userService.updateUser(user));
+    }
 }

@@ -18,9 +18,9 @@ public class ProjectExceptionAdvice {
         return new Result(businessException.getCode(), null, businessException.getMessage());
     }
 
-//    @ExceptionHandler(Exception.class)
-//    public Result doException() {
-//        return new Result(Code.SYSTEM_UNKNOWN_ERR, null, "系统未知错误");
-//    }
+    @ExceptionHandler(Exception.class)
+    public Result doException() {
+        return new Result(Code.SYSTEM_UNKNOWN_ERR, null, "系统未知错误");
+    }
 
 }

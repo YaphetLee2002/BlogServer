@@ -20,7 +20,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public boolean deleteUser(Integer id) {
+    public boolean deleteUser(Long id) {
         return userMapper.deleteUser(id) > 0;
     }
 
@@ -32,5 +32,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> getAllUser() {
         return userMapper.getAllUser();
+    }
+
+    @Override
+    public boolean updateUser(User user) {
+        return userMapper.updateUser(user) > 0;
     }
 }

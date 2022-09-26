@@ -21,7 +21,7 @@ public class UserController {
     }
 
     @DeleteMapping("/{id}")
-    public Result deleteUser(@PathVariable Integer id) {
+    public Result deleteUser(@PathVariable Long id) {
         boolean flag = userService.deleteUser(id);
         return new Result(flag ? Code.DELETE_OK : Code.DELETE_ERR, flag);
     }
@@ -40,5 +40,11 @@ public class UserController {
         Integer code = (userList != null) ? Code.GET_OK : Code.GET_ERR;
         String msg = (userList != null) ? "查询成功" : "查询失败";
         return new Result(code, userList, msg);
+    }
+
+    @PutMapping
+    public Result updateUser(@RequestBody User user) {
+        boolean flag = userService.updateUser(user);
+        return new Result(flag ? Code.PUT_OK : Code.PUT_ERR, flag);
     }
 }
