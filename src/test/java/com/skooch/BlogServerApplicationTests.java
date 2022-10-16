@@ -1,7 +1,10 @@
 package com.skooch;
+import java.util.Date;
 
 import com.skooch.mapper.UserMapper;
+import com.skooch.pojo.Product;
 import com.skooch.pojo.User;
+import com.skooch.service.ProductService;
 import com.skooch.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +19,8 @@ class BlogServerApplicationTests {
     private UserService userService;
     @Autowired
     private UserMapper userMapper;
+    @Autowired
+    private ProductService productService;
 
     @Test
     public void createUser(){
@@ -53,5 +58,19 @@ class BlogServerApplicationTests {
         user.setPassword("12345");
         user.setDescription("Changed Description");
         System.out.println(userService.updateUser(user));
+    }
+
+    @Test
+    public void addProduct() {
+        Product product = new Product();
+        product.setId("666");
+        product.setPrice(1.0D);
+        product.setName("testing");
+        product.setDescription("testing");
+        product.setDate(new Date());
+        product.setUserId("testing");
+
+        productService.addProduct(product);
+        System.out.println(product);
     }
 }
